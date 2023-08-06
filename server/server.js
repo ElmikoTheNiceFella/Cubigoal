@@ -7,7 +7,7 @@ const cors = require('cors');
 
 app.use(
   cors({
-    origin: ["https://astounding-lokum-c0a663.netlify.app"],
+    origin: ["https://cubigoal.netlify.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
