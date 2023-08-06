@@ -112,7 +112,7 @@ export const Task7 = () => {
         <div className="w-[934px] scale-[.9] md:scale-100 grid pop-up bg-[#D9D9D9] h-[506px]">
           <div className="absolute h-4 bg-[#665A48] hidden md:block progress-div-long"></div>
           <div className="relative w-screen m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div-long"></div>
-          <div className="gap-12 flex flex-col items-center mt-4">
+          <div className="gap-12 flex flex-col items-center mt-4 md:mt-16">
             <h2 className="text-5xl font-extrabold">Beat the AI</h2>
             <div className="flex w-[265px] flex-wrap">
               {Array.from({ length: 9 }).map((_, index) => (

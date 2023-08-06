@@ -47,7 +47,7 @@ export const Task2 = () => {
       setSuccess(false)
     }
     clearInterval(timer)
-  }, 1);
+  }, 10);
 
   /* Task Timer Callback */
 
