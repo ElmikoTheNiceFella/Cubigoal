@@ -15,7 +15,7 @@ export const Winners = ({ toggle }) => {
   //Text Input
   useEffect(() => {
     axios
-      .get("http://https://cubigoal-backend.onrender.com:8080/players", {
+      .get("https://cubigoal-backend.onrender.com:8080/players", {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
