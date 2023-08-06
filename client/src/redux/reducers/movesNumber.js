@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const movesNumberSlice = createSlice({
     name: 'movesNumber',
     initialState: {
-        value: 99
+        value: 4
     },
     reducers: {
         addMove: state => { state.value += 1 },
