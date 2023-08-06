@@ -116,5 +116,5 @@ html, body {
     overflow-x: hidden;
 }
 div#root {
-  overflow: hidden;
+  overflow-x: hidden;
 }
