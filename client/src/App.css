@@ -112,6 +112,9 @@ progress::-webkit-progress-bar {
 .cup-hover :nth-child(1):hover {
     filter: brightness(1.2);
 }
-body {
+html, body {
     overflow-x: hidden;
+}
+div#root {
+  overflow: hidden;
 }
