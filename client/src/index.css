@@ -6,3 +6,7 @@
 * {
   font-family: Lato, sans-serif;
 }
+
+#root {
+  overflow: hidden;
+}
