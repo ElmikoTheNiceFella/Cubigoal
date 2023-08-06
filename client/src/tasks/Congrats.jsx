@@ -27,7 +27,7 @@ export const Congrats = () => {
       setCanSubmit(false);
       await axios
         .post(
-          "https://cubigoal-backend.onrender.com:8080/players",
+          "https://cubigoal-backend.onrender.com/players",
           { name: input },
           {
             headers: {
