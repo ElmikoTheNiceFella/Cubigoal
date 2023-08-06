@@ -136,6 +136,7 @@ function App() {
       <main
         style={{
           backgroundColor: light ? "#F1C27B" : "#2C2C2C",
+          height: "100vh"
         }}
       >
         {/* Background */}
