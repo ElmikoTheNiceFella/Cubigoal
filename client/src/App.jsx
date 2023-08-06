@@ -140,7 +140,7 @@ function App() {
         }}
       >
         {/* Background */}
-        <div className="relative z-[0] top-[50rem]">
+        <div className="relative z-[0] top-[100vh]">
           <img
             style={{ filter: light ? "" : "grayscale(30%) brightness(0.3)" }}
             src={Dune1}
