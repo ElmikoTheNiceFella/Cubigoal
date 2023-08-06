@@ -1,0 +1,117 @@
+#player, #route {
+    transition: 0.2s cubic-bezier(.02,.66,.33,1);
+}
+#red {
+    background-color: rgb(233, 75, 75);
+}
+#orange {
+    background-color: rgb(222, 167, 64);
+}
+#yellow {
+    background-color: rgb(225, 225, 71);
+}
+#green {
+    background-color: rgb(59, 202, 59);
+}
+
+#draggable-1 {
+    background-color: #91B89D;
+    top: auto !important;
+}
+
+#draggable-2 {
+    background-color: #F0C179;
+    top: auto !important;
+}
+
+#draggable-3 {
+    background-color: #C38154;
+    top: auto !important;
+}
+
+#draggable-4 {
+    background-color: #C35B54;
+    top: auto !important;
+}
+
+.submitBtn {
+    box-shadow: 10px 10px 0px black;
+}
+.submitBtn:active {
+    box-shadow: 6px 6px 0px black;
+}
+.pop-up {
+    scale: .9;
+    animation: pop-up .3s cubic-bezier(0,.67,.35,.99) forwards;
+}
+@keyframes pop-up {
+    to {
+        scale: 1;
+    }
+}
+
+#clockArrow {
+    bottom: calc(100% - 0.4rem);
+}
+
+progress {
+  color: #665A48;
+}
+
+progress::-moz-progress-bar {
+  background: #665A48;
+}
+
+progress::-webkit-progress-value {
+  background: #665A48;
+}
+
+progress::-webkit-progress-bar {
+  background: #665A48;
+}
+.number:hover {
+    background-color: #C38154;
+}
+.progress-div {
+    width: 100%;
+    animation: prog 7s linear forwards;
+}
+.mobile-progress-div {
+    width: 100vw;
+    transform: translateX(0%);
+    animation: anim-mobile 7s linear forwards;
+}
+.mobile-progress-div-long {
+    width: 120vw;
+    transform: translateX(0%);
+    animation: anim-mobile 10s linear forwards;
+}
+.progress-div-long {
+    width: 100%;
+    animation: prog 10s linear forwards;
+}
+@keyframes anim-mobile {
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes prog-mobile {
+    to {
+        width: 0vw;
+    }
+}
+@keyframes prog {
+    to {
+        width: 0%;
+    }
+}
+.cup-hover :nth-child(1) {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.cup-hover :nth-child(1):hover {
+    filter: brightness(1.2);
+}
+body {
+    overflow-x: hidden;
+}

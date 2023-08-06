@@ -1,0 +1,100 @@
+#cup-2 :nth-child(1) {
+  animation: reveal 5s forwards;
+}
+.cup {
+  animation-fill-mode: forwards !important;
+}
+@keyframes reveal {
+  10% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+/** Animation 1 **/
+@keyframes cup-1-a {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(160%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(160%);
+  }
+}
+@keyframes cup-2-a {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-160%);
+  }
+  60% {
+    transform: translateX(160%);
+  }
+  100% {
+    transform: translateX(160%);
+  }
+}
+@keyframes cup-3-a {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(-320%);
+  }
+}
+/** Animation 2 **/
+@keyframes cup-1-b {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(160%);
+  }
+  60% {
+    transform: translateX(320%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+@keyframes cup-2-b {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-160%);
+  }
+  60% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes cup-3-b {
+  20% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(-320%);
+  }
+}
