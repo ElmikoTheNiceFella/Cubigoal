@@ -6,6 +6,7 @@ import "./App.css";
 export const Winners = ({ toggle }) => {
   const dateParser = (date) => {
     if (date == ":/" || !date) return ":/";
+    if (date == " ") return "";
     const parsedDate = date.substring(2, 10);
     return parsedDate.split("-").reverse().join("-");
   };
@@ -14,6 +15,12 @@ export const Winners = ({ toggle }) => {
 
   //Text Input
   useEffect(() => {
+    setListOfPlayers([
+      {
+        name: "Loading...",
+        submitDate: " "
+      }
+    ])
     axios
       .get("https://cubigoal-backend.onrender.com/players", {
         headers: {
