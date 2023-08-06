@@ -10,7 +10,6 @@ import { useMediaQuery } from "react-responsive";
 // Redux Functions Import
 import { useSelector, useDispatch } from "react-redux";
 // Redux Actions Imports
-import { moveTrue, moveFalse } from "./redux/reducers/canMove";
 import {
   moveForwards,
   moveBackwards,
@@ -35,7 +34,6 @@ import {
   restartRouteFromPol2Mobile,
 } from "./redux/reducers/moveActions";
 import {
-  addMove,
   subtractMove,
   resetMoves,
 } from "./redux/reducers/movesNumber";
@@ -48,7 +46,6 @@ import { Task5 } from "./tasks/Task5";
 import { Task6 } from "./tasks/Task6";
 import { Task7 } from "./tasks/Task7";
 // Restart Import
-import { Restart } from "./Restart.jsx";
 import { Congrats } from "./tasks/Congrats";
 
 import { Winners } from "./Winners";
