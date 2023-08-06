@@ -5,7 +5,13 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://cubigoal-backend.onrender.com"],
+    methods: ["POST", "GET"],
+    credentials: true
+  })
+);
 
 mongoose.connect(process.env.DB_URL, { useNewUrlParser: true });
 const database = mongoose.connection;

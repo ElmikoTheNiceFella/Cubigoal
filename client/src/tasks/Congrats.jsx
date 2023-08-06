@@ -26,16 +26,20 @@ export const Congrats = () => {
     if(inputError == "Valid") {
       setCanSubmit(false);
       await axios
-            .post("http://localhost:8080/players",{name: input}, {
-              headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-              },
-            })
-            .catch((error) => {
-              console.error(error);
-              setInputError("Server Error");
-            });
+        .post(
+          "http://https://cubigoal-backend.onrender.com:8080/players",
+          { name: input },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+          }
+        )
+        .catch((error) => {
+          console.error(error);
+          setInputError("Server Error");
+        });
       location.reload();
     }
     
