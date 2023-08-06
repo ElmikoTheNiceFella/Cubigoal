@@ -64,7 +64,7 @@ export const Task6 = () => {
   return (
     <>
       <div className="h-screen bg-black bg-opacity-25 absolute top-0 w-full grid place-content-center z-[99]">
-        <div className="w-[934px] scale-[.9] md:scale-100 grid pop-up bg-[#D9D9D9] h-[506px]">
+        <div className="w-[934px] scale-[.85] md:scale-100 grid pop-up bg-[#D9D9D9] h-[506px]">
           <div className="absolute h-4 bg-[#665A48] hidden md:block progress-div-long"></div>
           <div className="relative w-screen m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div-long"></div>
           <div className="gap-24 mt-16 flex flex-col items-center mb-16 md:mb-0">

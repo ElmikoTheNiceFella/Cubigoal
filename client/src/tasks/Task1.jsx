@@ -79,7 +79,7 @@ export const Task1 = () => {
             </h2>
             <input
               type="text"
-              className="w-96 px-4 h-12 text-xl border-2 box-content border-black"
+              className="w-80 md:w-96 px-4 h-12 text-xl border-2 box-content border-black"
               onChange={(e) => setInput(e.target.value)}
               placeholder="Answer here"
             />

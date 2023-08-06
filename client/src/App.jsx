@@ -302,7 +302,6 @@ function App() {
           MOVES <br className="sm:hidden" />
           LEFT: {numberofmoves}
         </p>
-        {numberofmoves <= 0 ? <Restart /> : ""}
       </main>
     </>
   );

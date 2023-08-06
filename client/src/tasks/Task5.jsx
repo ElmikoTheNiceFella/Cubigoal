@@ -31,10 +31,10 @@ export const Task5 = () => {
   const [poggers, setPoggers] = useState(window.innerWidth)
 
   const possibilities = [
-    [2, 4, 1, 3],
-    [4, 3, 2, 1],
+    [2, 3, 1, 4],
+    [1, 3, 2, 4],
     [3, 2, 1, 4],
-    [1, 2, 4, 3],
+    [2, 1, 3, 4],
   ];
 
   const compareArrays = (arr1, arr2) => {
@@ -104,7 +104,7 @@ export const Task5 = () => {
     <>
       <div className="h-screen bg-black bg-opacity-25 absolute top-0 w-full grid place-content-center z-[99]">
         <DragDropContext onDragEnd={handleDragEnd}>
-          <div className="w-[934px] grid pop-up bg-[#D9D9D9] h-[506px]">
+          <div className="w-[934px] scale-[.9] md:scale-100 grid pop-up bg-[#D9D9D9] h-[506px]">
             <div className="absolute h-4 bg-[#665A48] hidden md:block progress-div"></div>
             <div className="relative w-screen m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
             <div className="gap-24 flex flex-col md:mt-6 items-center mb-44">
