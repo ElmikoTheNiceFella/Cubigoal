@@ -46,22 +46,22 @@ export const Task1 = () => {
     setNumber1(Math.floor(Math.random() * 20));
     setNumber2(Math.floor(Math.random() * 20));
     dispatch(moveFalse());
-    // if (!success) {
-    //   var timerr = setTimeout(() => {
-    //     dispatch(moveTrue());
-    //     isNotDesktop
-    //       ? dispatch(moveBackwardsMobile())
-    //       : dispatch(moveBackwards());
-    //     isNotDesktop
-    //       ? dispatch(moveBackwardsRouteMobile())
-    //       : dispatch(moveBackwardsRoute());
-    //   }, timeLimit);
-    // } else {
-    //   clearTimeout(timerr);
-    // }
-    // return () => {
-    //   clearTimeout(timerr);
-    // };
+    if (!success) {
+      var timerr = setTimeout(() => {
+        dispatch(moveTrue());
+        isNotDesktop
+          ? dispatch(moveBackwardsMobile())
+          : dispatch(moveBackwards());
+        isNotDesktop
+          ? dispatch(moveBackwardsRouteMobile())
+          : dispatch(moveBackwardsRoute());
+      }, timeLimit);
+    } else {
+      clearTimeout(timerr);
+    }
+    return () => {
+      clearTimeout(timerr);
+    };
   }, [moveTrue, moveBackwards, dispatch, timeLimit]);
 
   //Text Input
