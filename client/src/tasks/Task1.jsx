@@ -46,22 +46,22 @@ export const Task1 = () => {
     setNumber1(Math.floor(Math.random() * 20));
     setNumber2(Math.floor(Math.random() * 20));
     dispatch(moveFalse());
-    if (!success) {
-      var timerr = setTimeout(() => {
-        dispatch(moveTrue());
-        isNotDesktop
-          ? dispatch(moveBackwardsMobile())
-          : dispatch(moveBackwards());
-        isNotDesktop
-          ? dispatch(moveBackwardsRouteMobile())
-          : dispatch(moveBackwardsRoute());
-      }, timeLimit);
-    } else {
-      clearTimeout(timerr);
-    }
-    return () => {
-      clearTimeout(timerr);
-    };
+    // if (!success) {
+    //   var timerr = setTimeout(() => {
+    //     dispatch(moveTrue());
+    //     isNotDesktop
+    //       ? dispatch(moveBackwardsMobile())
+    //       : dispatch(moveBackwards());
+    //     isNotDesktop
+    //       ? dispatch(moveBackwardsRouteMobile())
+    //       : dispatch(moveBackwardsRoute());
+    //   }, timeLimit);
+    // } else {
+    //   clearTimeout(timerr);
+    // }
+    // return () => {
+    //   clearTimeout(timerr);
+    // };
   }, [moveTrue, moveBackwards, dispatch, timeLimit]);
 
   //Text Input
@@ -82,6 +82,12 @@ export const Task1 = () => {
               className="w-56 md:w-96 px-4 h-12 text-xl border-2 box-content border-black"
               onChange={(e) => setInput(e.target.value)}
               placeholder="Answer here"
+              onKeyDown={(event) => {
+                if (input == number1 + number2 && event.key == "Enter") {
+                  setSuccess((prevState) => !prevState);
+                  handleClick();
+                }
+              }}
             />
           </div>
           {/* Submit On Task Success */}
