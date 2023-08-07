@@ -74,7 +74,7 @@ export const Task4 = () => {
       <div className="h-screen bg-black bg-opacity-25 absolute top-0 w-full grid place-content-center z-[99]">
         <div className="md:w-[934px] w-[800px] grid pop-up  bg-[#D9D9D9] h-[506px]">
           <div className="relative h-4 bg-[#665A48] hidden md:block progress-div"></div>
-          <div className="relative w-screen m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
+          <div className="relative m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
           <div className="gap-24 flex flex-col items-center mb-64">
             <h2 className="text-5xl font-extrabold">
               Make the 8 a {randomVal}

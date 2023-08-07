@@ -84,11 +84,11 @@ function App() {
 
   const restartGameMobile = () => {
     switch (true) {
-      case moves < 626:
+      case moves < 164:
         dispatch(restartFromZero());
         dispatch(restartRouteFromZero());
         break;
-      case moves > 970:
+      case moves > 244:
         dispatch(restartFromPol2Mobile());
         dispatch(restartRouteFromPol2Mobile());
         break;

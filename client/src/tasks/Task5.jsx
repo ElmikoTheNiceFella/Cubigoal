@@ -106,7 +106,7 @@ export const Task5 = () => {
         <DragDropContext onDragEnd={handleDragEnd}>
           <div className="w-[934px] scale-[.9] md:scale-100 grid pop-up bg-[#D9D9D9] h-[506px]">
             <div className="absolute h-4 bg-[#665A48] hidden md:block progress-div"></div>
-            <div className="relative w-screen m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
+            <div className="relative m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
             <div className="gap-24 flex flex-col md:mt-6 items-center mb-44">
               <h2 className="text-5xl relative top-10 font-extrabold">
                 Sort the numbers

@@ -77,7 +77,7 @@ progress::-webkit-progress-bar {
     animation: prog 7s linear forwards;
 }
 .mobile-progress-div {
-    width: 100vw;
+    width: 120vw;
     transform: translateX(0%);
     animation: anim-mobile 7s linear forwards;
 }
