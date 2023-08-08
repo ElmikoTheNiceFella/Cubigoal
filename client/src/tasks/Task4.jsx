@@ -77,7 +77,7 @@ export const Task4 = () => {
           <div className="relative m-auto mt-0 h-4 bg-[#665A48] md:hidden mobile-progress-div"></div>
           <div className="gap-24 flex flex-col items-center mb-64">
             <h2 className="text-5xl font-extrabold">
-              Make the 8 a {randomVal}
+              Make the 8 a {randomVal} (click)
             </h2>
             <div className="flex justify-center w-56">
               <div className="bg-black z-[4] absolute w-28 h-4 top-[10.5rem] rounded-full number"></div>
