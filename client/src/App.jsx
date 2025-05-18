@@ -5,7 +5,7 @@ import Checkpoint from "./assets/Checkpoint.svg";
 import Endpoint from "./assets/Endpoint.svg";
 //  Dependencies
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 // Redux Functions Import
 import { useSelector, useDispatch } from "react-redux";
@@ -51,6 +51,14 @@ import { Congrats } from "./tasks/Congrats";
 import { Winners } from "./Winners";
 
 function App() {
+
+  useEffect(() => {
+    (async() => {
+      await fetch("https://cubigoal.netlify.app/ping", {
+        method: "GET"
+      })
+    })()
+  }, [])
 
   const [light, setLight] = useState(true);
   const [winnersToggle, setWinnersToggle] = useState(false);
